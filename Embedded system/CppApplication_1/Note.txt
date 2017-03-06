@@ -1,0 +1,24 @@
+so basically my idea was to have the current position of the servo motor in a character. 
+
+WIth that we could just add or decrement 1 to it to change the position. 
+
+To do so, i had made a switch case which checks the position of the motor that is defined by having the duty cycle value moved to the register 
+
+, (i.e) if i have a certain value in CCR1 that denotes the state of the motor 
+
+so basically we design the duty cycle to have 5 different ON periods, that varies from 0.38ms to 2.1ms accordingly.
+
+
+/********************************************/
+
+
+so again yes with 5 different duty cycle being written to register and having x function to check them. 
+
+Then later in program we could assign values to a character " position " from " 1 2 3 4 5 " by asking them to check the X function of what duty cycle it has. 
+
+so depending on what value it has, the position of the motor will be in " position " and we could just move it accordingly. 
+
+
+/********************************/
+
+
